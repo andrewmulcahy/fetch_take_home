@@ -1,0 +1,41 @@
+Subject Line: Data Quality Issues and Insights from Investigation on Transactions
+
+Hello [Leader],
+
+I just wanted to follow up regarding the investigation on the Transacations data we were discussing.
+
+During my investigation, I encountered some data quality issues as well as some areas where I could use some support.
+
+Below are some quality issues I ran into:
+
+Users Table:
+1) There are null values in key columns
+2) The state field has invalid entries (ex: PR)
+3) There are overlapping categories in gender, which I needed to clean
+
+Transactions Table:
+1) Missing barcode values prevented joining to our Product data
+2) The columns FINAL_QUANITIY and FINAL_SALE contained irrelevant data as well as incorrect data types
+
+Products Table:
+1) Missing barcode values prevented joining to our Transaction data
+2) Duplicate rows were present
+
+Joined Tables:
+1) After joining our Users and Products, I encountered many null values creating significant gaps in our data, making it nearly unusable
+
+
+After reviewing these tables, I could use your support with the following:
+1) Escalating to Engineering leadership
+	a) I will reach out to our Engineering partners to see if this data is available, but I may need your help escalating if I do not hear back
+2) We need to align on a better standard of work, to make sure our data is being captured correctly, so we don't encounter this in the future
+3) We need stricter requirements with our data to ensure all necessary data is being captured
+
+
+On a more positive note, I did uncover an interesting trend in our data - Tositios is the leading the category Dips & Salsa in both receipts and sales, so it appears they are a top brand. 
+Again, this is assuming our data is correct, but I will be able to confirm that after we recover some of the missing data from Engineering.
+
+Please let me know if you have any questions or if you need more details from me!
+
+Thank you,
+Andrew Mulcahy
